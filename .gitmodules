@@ -1,0 +1,18 @@
+[submodule "syna"]
+	path = themes/syna
+	url = https://github.com/okkur/syna.git
+[submodule "themes/swift"]
+	path = themes/swift
+	url = https://github.com/onweru/hugo-swift-theme.git
+[submodule "themes/keeplt"]
+	path = themes/keeplt
+	url = https://github.com/Fastbyte01/KeepIt.git
+[submodule "themes/cupper"]
+	path = themes/cupper
+	url = https://github.com/zwbetz-gh/cupper-hugo-theme.git
+[submodule "themes/AllinOne"]
+	path = themes/AllinOne
+	url = https://github.com/orianna-zzo/AllinOne.git
+[submodule "themes/timer"]
+	path = themes/timer
+	url = https://github.com/themefisher/timer-hugo.git

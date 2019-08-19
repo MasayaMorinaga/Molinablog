@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "js-JP"
+title = "My New Hugo Site"
+theme = "timer"
