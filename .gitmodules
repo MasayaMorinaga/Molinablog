@@ -22,6 +22,3 @@
 [submodule "themes/future-imperfect-slim"]
 	path = themes/future-imperfect-slim
 	url = https://github.com/pacollins/hugo-future-imperfect-slim.git
-[submodule "themes/future-imperfect"]
-	path = themes/future-imperfect
-	url = https://github.com/jpescador/hugo-future-imperfect.git
