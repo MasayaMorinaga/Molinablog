@@ -58,7 +58,7 @@ disableLanguages        = [""]
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
     header                = "Molina's<br>Tech diary"
-    paragraph             = "Molinaの技術ブログ的な何か<br>技術関係ないことも書くかもしれない<br>ゆるく書いていきたい"
+    paragraph             = "Molinaの技術ブログ<br>技術関係ないことも書くかもしれない"
     rssIntro              = true
     socialIntro           = true
 
@@ -72,7 +72,7 @@ disableLanguages        = [""]
       alt                 = "Hugo Future Imperfect Slim"
 
   [params.sidebar]
-    about               = "東京にある工業大学に通う学生です.<br>ものつくりに興味があります.<br>最近までロボコンをやっていました."
+    about               = "東京にある工業大学に通う学生です.<br>ロボコンをやっていました"
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
     postAmount          = 5
     # set to show or to hide categories in the sidebar
@@ -129,6 +129,12 @@ disableLanguages        = [""]
     name              = "Categories"
     url               = "/categories/"
     identifier        = "fas fa-sitemap"
+    weight            = 4
+
+  [[menu.main]]
+    name              = "Privacy Policy"
+    url               = "/privacypolicy/"
+    identifier        = "fas fa-user-lock"
     weight            = 5
 
 # Sets Social Media icons to appear and link to your account. Value should be your
