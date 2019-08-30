@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Molina&#39;s tech diary on Molina&#39;s Tech diary</title>
-    <link>/</link>
-    <description>Recent content in Molina&#39;s tech diary on Molina&#39;s Tech diary</description>
+    <title>Raspberry Pi on Molina&#39;s Tech diary</title>
+    <link>/categories/raspberry-pi/</link>
+    <description>Recent content in Raspberry Pi on Molina&#39;s Tech diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>js-JP</language>
     <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
