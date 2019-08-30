@@ -134,7 +134,7 @@ h5 {
 }
 h5 {
     font-size: 0.85rem;
-    text-transform: uppercase;
+    text-transform: none;
 }
 kbd {
     line-height: 1;

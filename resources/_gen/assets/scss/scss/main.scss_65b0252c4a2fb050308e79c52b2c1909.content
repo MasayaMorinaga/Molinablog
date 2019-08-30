@@ -258,7 +258,7 @@ aside h3 {
   box-shadow: 0 1rem 4rem rgba(19, 19, 19, 0.5);
   cursor: pointer;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   border-radius: 5rem;
 }
 
@@ -763,7 +763,7 @@ aside h3 {
   background: #04a763;
   color: #fff;
   padding: 0.25rem 0.67rem !important;
-  text-transform: uppercase;
+  text-transform: none;
   display: inline-flex;
   border-radius: 5px;
 }

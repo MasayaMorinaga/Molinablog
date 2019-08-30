@@ -72,7 +72,7 @@ disableLanguages        = [""]
       alt                 = "Hugo Future Imperfect Slim"
 
   [params.sidebar]
-    about               = "東京にある工業大学に通う学生です.<br>ロボコンをやっていました"
+    about               = "東京にある工業大学に通う学生です.<br>ものつくりに興味があります.<br>ロボコンをやっていました."
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
     postAmount          = 5
     # set to show or to hide categories in the sidebar
