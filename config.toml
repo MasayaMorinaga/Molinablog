@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "http://blog.molina.jp/"
 languageCode = "js-JP"
 title = "Molina's Tech diary"
 theme = "future-imperfect-slim"

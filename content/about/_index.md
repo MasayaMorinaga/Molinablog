@@ -58,7 +58,7 @@ NHKの[学生ロボコン](http://www.official-robocon.com/gakusei/)をやって
     - MR2(4脚移動ロボット)メイン設計
     - モータードライバの改良
     - 大会当日チームリーダー
-        - くじ引きを引く係
+        - くじを引く係
 
 - [関東春ロボコン](https://kantouharurobo.com/)
     - 2017年大会出場(準優勝)
