@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>privacy policy on Molina&#39;s Tech diary</title>
-    <link>/privacypolicy/</link>
+    <link>http://blog.molina.jp/privacypolicy/</link>
     <description>Recent content in privacy policy on Molina&#39;s Tech diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>js-JP</language>
     <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/privacypolicy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.molina.jp/privacypolicy/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

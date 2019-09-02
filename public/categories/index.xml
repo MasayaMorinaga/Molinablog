@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Molina&#39;s Tech diary</title>
-    <link>/categories/</link>
+    <link>http://blog.molina.jp/categories/</link>
     <description>Recent content in Categories on Molina&#39;s Tech diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>js-JP</language>
     <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.molina.jp/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo</title>
-      <link>/categories/hugo/</link>
+      <link>http://blog.molina.jp/categories/hugo/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/hugo/</guid>
+      <guid>http://blog.molina.jp/categories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Raspberry Pi</title>
-      <link>/categories/raspberry-pi/</link>
+      <link>http://blog.molina.jp/categories/raspberry-pi/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/raspberry-pi/</guid>
+      <guid>http://blog.molina.jp/categories/raspberry-pi/</guid>
       <description></description>
     </item>
     
