@@ -189,3 +189,5 @@ disableLanguages        = [""]
   # Email
   email                 = ""
 
+[blackfriday]
+  hrefTargetBlank = true
