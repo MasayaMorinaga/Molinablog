@@ -1,0 +1,42 @@
+<footer id="site-footer">
+  {{ if or (.Site.Params.footer.rssFooter) (.Site.Params.footer.socialFooter) }}
+      <ul class="socnet-icons">
+        {{ if .Site.Params.footer.rssFooter }}{{ partial "rss-icon" . }}{{ end }}
+        {{ if .Site.Params.footer.socialFooter }}{{ partial "socnet-icon" . }}{{ end }}
+      </ul>
+  {{ end }}
+  <p class="copyright">
+    {{ with .Site.Copyright | safeHTML }}
+      {{ . }}
+    {{ else }}
+      &copy; {{ .Site.LastChange.Year }}
+      {{if isset .Site.Params "author" }}
+        {{ .Site.Params.author }}
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
+    {{ end }}. <br>
+    {{ i18n "attribution" . | safeHTML }}
+  </p>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#252e39"
+      },
+      "button": {
+        "background": "#14a7d0"
+      }
+    },
+    "content": {
+      "message": "このサイトではcookieを使用しています. cookieの収集を拒否する場合はご自身での設定変更が必要となります. 詳しくはこちらをご覧ください.",
+      "dismiss": "閉じる",
+      "allow": "同意",
+      "href": "/privacypolicy/"
+    }
+  });
+  </script>   
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

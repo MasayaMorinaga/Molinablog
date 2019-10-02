@@ -5,7 +5,7 @@ theme = "future-imperfect-slim"
 preserveTaxonomyNames   = true
 paginate                = 3
 disqusShortname         = ""
-googleAnalytics         = ""
+googleAnalytics         = "UA-148827082-1"
 pluralizeListTitles     = false
 disableLanguages        = [""]
 
@@ -191,3 +191,6 @@ disableLanguages        = [""]
 
 [blackfriday]
   hrefTargetBlank = true
+
+
+  
