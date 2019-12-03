@@ -3,7 +3,6 @@ author = "Molina"
 categories = ["Windows","Tips"]
 date = "2019-12-02"
 description = "Windowsの便利な機能をまとめてみた"
-images = [""]
 linktitle = ""
 title = "Windowsの便利機能"
 type = "post"

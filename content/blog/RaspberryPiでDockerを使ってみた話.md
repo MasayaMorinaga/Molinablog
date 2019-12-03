@@ -3,7 +3,6 @@ author = "Molina"
 categories = ["Raspberry Pi","Docker"]
 date = "2019-09-25"
 description = "Raspberry PiにDockerを入れて遊んでみたのでその感想"
-images = [""]
 linktitle = ""
 title = "RaspberryPiでDockerを使ってみた話"
 type = "post"

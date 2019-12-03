@@ -3,7 +3,6 @@ author = "Molina"
 categories = ["Hugo","Netlify"]
 date = "2019-09-05"
 description = "作ったブログを公開する"
-images = [""]
 linktitle = ""
 title = "Netlifyで記事の公開"
 type = "post"

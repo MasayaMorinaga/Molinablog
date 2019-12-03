@@ -3,7 +3,7 @@ author = "Molina"
 categories = ["Hugo"]
 date = "2019-09-03"
 description = "WindowsでHugoの環境構築"
-images = [""]
+
 linktitle = ""
 title = "Hugoでブログ的なものを作る"
 type = "post"
