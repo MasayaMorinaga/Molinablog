@@ -1,5 +1,5 @@
 +++
-title = "privacy policy"
+title = "Privacy Policy"
 description = "プライバシーポリシー"
 date = "2019-08-20"
 +++

@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Hugoでブログ的なものを作る - Molina&#39;s Tech diary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1">
+  <link rel="manifest" href="/favicon/site.webmanifest?v=1">
+  
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1">
+  
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <meta name="generator" content="Hugo 0.57.2" />
+  <meta itemprop="name" content="Hugoでブログ的なものを作る">
+<meta itemprop="description" content="WindowsでHugoの環境構築">
+
+
+<meta itemprop="datePublished" content="2019-09-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-09-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="152">
+
+
+
+<meta itemprop="keywords" content="" />
+
+  <meta property="og:title" content="Hugoでブログ的なものを作る" />
+<meta property="og:description" content="WindowsでHugoの環境構築" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.molina.jp/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E7%9A%84%E3%81%AA%E3%82%82%E3%81%AE%E3%82%92%E4%BD%9C%E3%82%8B/" />
+<meta property="article:published_time" content="2019-09-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-09-03T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugoでブログ的なものを作る"/>
+<meta name="twitter:description" content="WindowsでHugoの環境構築"/>
+<meta name="twitter:site" content="@Msymng"/>
+
+  
+
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+  
+    
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+      
+      
+      <link rel="stylesheet" href="/css/main.min.def756f4cd28354005a37cedc94c36d695bb1b0271e40edf1acf67d865b9ff70.css" integrity="sha256-3vdW9M0oNUAFo3ztyUw21pW7GwJx5A7fGs9n2GW5/3A=">
+      <link rel="stylesheet" href="/css/add-on.css">
+    
+  
+  
+  
+  
+    
+  
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            Blog
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        
+          
+          <a href="/" class="link"><i class="fas fa-home">&nbsp;</i>Home</a>
+        
+      
+        
+          
+          <a href="/about/" class="link"><i class="far fa-id-card">&nbsp;</i>About</a>
+        
+      
+        
+          
+          <a href="/blog/" class="link"><i class="far fa-newspaper">&nbsp;</i>Blog</a>
+        
+      
+        
+          
+          <a href="/categories/" class="link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
+        
+      
+        
+          
+          <a href="/privacypolicy/" class="link"><i class="fas fa-user-lock">&nbsp;</i>Privacy Policy</a>
+        
+      
+      
+      
+
+    </menu>
+    
+
+    
+    
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="/"><img src="/img/main/Blade_blue_fixed.png" class="circle" width="200mm" alt="Hugo Future Imperfect Slim" /></a>
+  <header>
+    <h1>Molina's<br>Tech diary</h1>
+  </header>
+  <main>
+    <p>Molinaの技術ブログ<br>技術関係ないことも書くかもしれない</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/MasayaMorinaga" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/Msymng" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+        <h2><a href="/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E7%9A%84%E3%81%AA%E3%82%82%E3%81%AE%E3%82%92%E4%BD%9C%E3%82%8B/">Hugoでブログ的なものを作る</a></h2>
+    
+    
+        <p>WindowsでHugoの環境構築</p>
+    
+</div>
+  <div class="meta">
+    <time class="published" datetime="2019-09-03 00:00:00 &#43;0000 UTC">
+      September 3, 2019
+    </time>
+    <span class="author">Molina</span>
+    
+      <p>1 minute read</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Hugo%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e7%9a%84%e3%81%aa%e3%82%82%e3%81%ae%e3%82%92%e4%bd%9c%e3%82%8b&amp;url=http%3a%2f%2fblog.molina.jp%2fblog%2fhugo%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E7%259A%2584%25E3%2581%25AA%25E3%2582%2582%25E3%2581%25AE%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fblog.molina.jp%2fblog%2fhugo%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E7%259A%2584%25E3%2581%25AA%25E3%2582%2582%25E3%2581%25AE%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=http%3a%2f%2fblog.molina.jp%2fblog%2fhugo%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E7%259A%2584%25E3%2581%25AA%25E3%2582%2582%25E3%2581%25AE%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2f&amp;title=Hugo%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e7%9a%84%e3%81%aa%e3%82%82%e3%81%ae%e3%82%92%e4%bd%9c%e3%82%8b" target="_blank" rel="noopener" class="share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fblog.molina.jp%2fblog%2fhugo%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E7%259A%2584%25E3%2581%25AA%25E3%2582%2582%25E3%2581%25AE%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2f&amp;title=Hugo%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e7%9a%84%e3%81%aa%e3%82%82%e3%81%ae%e3%82%92%e4%bd%9c%e3%82%8b" target="_blank" rel="noopener" class="share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2fblog.molina.jp%2fblog%2fhugo%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E7%259A%2584%25E3%2581%25AA%25E3%2582%2582%25E3%2581%25AE%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2f&amp;description=Hugo%e3%81%a7%e3%83%96%e3%83%ad%e3%82%b0%e7%9a%84%e3%81%aa%e3%82%82%e3%81%ae%e3%82%92%e4%bd%9c%e3%82%8b" target="_blank" rel="noopener" class="share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check out this post by Molina&amp;body=http%3a%2f%2fblog.molina.jp%2fblog%2fhugo%25E3%2581%25A7%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E7%259A%2584%25E3%2581%25AA%25E3%2582%2582%25E3%2581%25AE%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+
+  <div class="content">
+    
+
+<p>とりあえずHugoでブログを作ったのでその記録を残しておきます.</p>
+
+<h1 id="hugoとは">Hugoとは</h1>
+
+<p>静的サイトジェネレーターの1つです.
+静的サイトジェネレーターについて詳しくはggってください. めちゃくちゃ雑に説明するとホームページをhtml + css + JavaScriptでいい感じに作れるものです.</p>
+
+<p>静的サイトジェネレーターにはいろいろ種類がありますが, <a href="https://gohugo.io" target="_blank">公式サイト</a>曰くHugoはビルドが速いそうです. Go言語で作られているらしい.
+ちょっと調べた感じあんまりテーマはそこまで豊富でないのかな. まぁいいや.
+別にHugoにこだわりはなかったんですが, 自分の周りにHugoを使ってる人が多かったのもあってHugoにしました. 何か困ったときに周りに聞ける人がいるの大事.</p>
+
+<h1 id="環境構築">環境構築</h1>
+
+<h2 id="ubuntu">Ubuntu</h2>
+
+<p>apt installで入ると思います. そんなに苦労しなかったので特に説明しません. おしまい.
+gitが入ってない場合はgitも入れておくことをおすすめします. こちらもapt installで入ると思います.</p>
+
+<h2 id="windows">Windows</h2>
+
+<p>なんかchocolateyとかScoopとか使えばコマンドで入るらしいですね. 面白そうなので今度試してみよう.</p>
+
+<p>とりあえず情弱Windowsユーザーなので手動で入れます. 64bit前提で話をすすめます.</p>
+
+<p>まず, <a href="https://github.com/gohugoio/hugo/releases" target="_blank">公式のgithub</a>からhugo_extended_0.57.2_Windows-64bit.zip
+を落としてきます. 別にextendedじゃないやつでもいいんですけど動かないテーマがあったりするので特に理由がなければextendedをおすすめします.</p>
+
+<p>次に, 落としてきたzipファイルを展開します. 展開先はどこでもいいですが, Cドライブ直下あたりがいいんじゃないでしょうか. 自分はCドライブ直下に新たにhugoというフォルダを作ってそこに中身のファイルを展開しました. 以下, C:\hugoにhugo.exeがあるという前提で話を進めます.</p>
+
+<p>ファイルの展開が終わったらパスを通します.
+パスを通すってなんぞやって人はここを読むと良いと思います.
+<a href="https://proengineer.internous.co.jp/content/columnfeature/5205" target="_blank">https://proengineer.internous.co.jp/content/columnfeature/5205</a></p>
+
+<p>具体的な作業としては, システムの詳細設定の画面を開きます.
+スタートメニューの検索窓で「システムの詳細設定」とでも打てば出てくると思います.
+そこの右下にある「環境変数」をクリック
+<figure class="center">
+    <img src="/img/2019/09/controlsysdm.png" width="400"/> 
+</figure>
+</p>
+
+<p>環境変数の「Path」を選択し編集をクリックします.
+<figure class="center">
+    <img src="/img/2019/09/path.png" width="400"/> 
+</figure>
+</p>
+
+<p>新規をクリックすると新しいパスを入力できるようになるので, 「hugo.exe」をおいてあるパス(自分の場合はC:\hugo)を入力してOKをします.
+<figure class="center">
+    <img src="/img/2019/09/pathedit.png" width="400"/> 
+</figure>
+</p>
+
+<p>これでパスは通っているはずなんですが, Windowsは気まぐれなので再起動しないと通ってないことがあります(通っていたと思いきや途中で通らなくなることもあります). 再起動することをおすすめします.</p>
+
+<p>とりあえず再起動が終わったらコマンドプロンプトとかを開いてちゃんとインストールできてるか確認します. ところで最近, Microsoftはコマンドプロンプトの代わりにWindowsPowerShellを推しているようですね. 右クリックメニューからコマンドプロンプトが消えててびっくりしてしまった. まぁ今回はどっちでやってもいいと思います.</p>
+
+<p>コマンドプロンプトを開きたい場合は, スタートメニューの検索窓で「コマンドプロンプト」と入力するとコマンドプロンプトが開きます. コマンドプロンプトに</p>
+
+<pre><code>hugo version
+</code></pre>
+
+<p>と入力してバージョン番号が表示されたら成功です. やったね.</p>
+
+<p>とりあえずhugoが入ったら, gitがコマンドで使える状態になってない場合は, gitも導入しておくことをおすすめします. <a href="https://gitforwindows.org/" target="_blank">git for windows</a>で良いんじゃないでしょうか. インストーラーをダウンロードして走らせるだけで全部よろしくやってくれます. 詳しいことは説明しないので必要なら調べてください.</p>
+
+<h1 id="ブログを作ってみる">ブログを作ってみる</h1>
+
+<p>hugoとgitが入っていれば基本公式ページの<a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick-Start</a>に沿っていけばとりあえずのそれらしいものが作れます.</p>
+
+<p>まず, ブログを生成したいディレクトリ(フォルダ)までコマンドプロンプトで移動します.</p>
+
+<pre><code>cd ディレクトリのパス
+</code></pre>
+
+<p>で移動できます.</p>
+
+<p>移動できたら,</p>
+
+<pre><code>hugo new site quickstart
+</code></pre>
+
+<p>を実行. <code>quickstart</code>の部分は任意です. 好きな名前にしてください.</p>
+
+<p>すると新しく「quickstart」というディレクトリ(フォルダ)が生成され, 中に最低限のディレクトリなりができていると思います.</p>
+
+<p>次に,</p>
+
+<pre><code>cd quickstart
+</code></pre>
+
+<p>で作ったディレクトリに移動し,</p>
+
+<pre><code>git init
+</code></pre>
+
+<p>で新たにGitのリポジトリを作ります.
+その後, サブモジュールでテーマを追加します.</p>
+
+<pre><code>git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+</code></pre>
+
+<p>上記は, 公式に沿って<a href="https://themes.gohugo.io/gohugo-theme-ananke/" target="_blank">Ananke theme</a>の時の例ですが, 他のテーマの場合はgitのリンクの部分と一番うしろのディレクトリの指定の部分を変えれば良いです.</p>
+
+<p>これでthemes/anakeにテーマがダウンロードできました.</p>
+
+<p>テーマを適用するにはconfig.tomlでテーマを設定してやる必要があります.
+コマンドプロンプトを使う場合は</p>
+
+<pre><code>echo theme = &quot;ananke&quot; &gt;&gt; config.toml
+</code></pre>
+
+<p>とすればconfig.tomlに<code>theme = &quot;ananke&quot;</code>が追記されます. 別にメモ帳とかで追記しても問題ないです.</p>
+
+<p>とりあえず適当に記事を生成してみます.</p>
+
+<pre><code>hugo new posts/my-first-post.md
+</code></pre>
+
+<p>で, content/postに新しくmy-first-post.mdが生成されると思います.
+ここにMarkdown形式で記事を書くことができます. 書き終わったら, 上から3行目あたりにある, <code>draft: true</code>を<code>draft: false</code>にすると公開できます.</p>
+
+<p>実際の出来栄えは,</p>
+
+<pre><code>hugo server -D
+</code></pre>
+
+<p>で確認できます. 上記のコマンドを実行後, ブラウザで<a href="http://localhost:1313/" target="_blank">http://localhost:1313/</a>にアクセスしてください. できたサイトが表示されているはずです.</p>
+
+<p>なんかエラーが出てきたらエラーメッセージでggってください. テーマによってはconfig.tomlを真面目に書かないとエラーになるものがあります.</p>
+
+<p>まぁだいたいどのテーマもexampleSiteのところにconfig.tomlとかの例があるので, 適宜コピーしてきて自分の気にいるように編集すると良いと思います.</p>
+
+<p>なんか思ったより長くなったので, 公開する方法はまた次回に書こうと思います.</p>
+
+<h1 id="参考">参考</h1>
+
+<p><a href="https://gohugo.io/getting-started/installing/" target="_blank">https://gohugo.io/getting-started/installing/</a></p>
+
+<p><a href="https://gohugo.io/getting-started/quick-start/" target="_blank">https://gohugo.io/getting-started/quick-start/</a></p>
+
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="http://blog.molina.jp/categories/hugo">Hugo</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    <li class="tags">
+      <ul>
+        <li>None</li>
+      </ul>
+    </li>
+  
+</ul>
+
+  </footer>
+</article>
+
+
+<div class="pagination">
+  
+    <a href="/blog/my-first-post/" class="button"><div class="previous"><div>ブログを始めてみました</div></div></a>
+  
+  
+    <a href="/blog/netlify%E3%81%A7%E8%A8%98%E4%BA%8B%E3%81%AE%E5%85%AC%E9%96%8B/" class="button"><div class="next"><div>Netlifyで記事の公開</div></div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/blog/windows%E3%81%AE%E4%BE%BF%E5%88%A9%E6%A9%9F%E8%83%BD/">Windowsの便利機能</a></h1>
+          <time class="published" datetime="">December 2, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/blog/raspberrypi%E3%81%A7docker%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/">RaspberryPiでDockerを使ってみた話</a></h1>
+          <time class="published" datetime="">September 25, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/%E5%A4%A7%E5%B7%A5%E5%A4%A7%E4%BA%A4%E6%B5%81%E4%BC%9A%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%9F/" class="image featured">
+    
+      <img src="/img/2019/09/OIT.jpg" alt="">
+    
+  </a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/%E5%A4%A7%E5%B7%A5%E5%A4%A7%E4%BA%A4%E6%B5%81%E4%BC%9A%E3%81%AB%E5%8F%82%E5%8A%A0%E3%81%97%E3%81%9F/">大工大交流会に参加した</a></h1>
+          <time class="published" datetime="">September 23, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/blog/netlify%E3%81%A7%E8%A8%98%E4%BA%8B%E3%81%AE%E5%85%AC%E9%96%8B/">Netlifyで記事の公開</a></h1>
+          <time class="published" datetime="">September 5, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E7%9A%84%E3%81%AA%E3%82%82%E3%81%AE%E3%82%92%E4%BD%9C%E3%82%8B/">Hugoでブログ的なものを作る</a></h1>
+          <time class="published" datetime="">September 3, 2019</time>
+        </header>
+      </article>
+      
+      
+        <a href="/blog/" class="button">See more</a>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/hugo/">hugo<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/raspberry-pi/">raspberry-pi<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/docker/">docker<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/netlify/">netlify<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/tips/">tips<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/windows/">windows<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/%E3%83%AD%E3%83%9C%E3%82%B3%E3%83%B3/">ロボコン<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/%E4%BA%A4%E6%B5%81%E4%BC%9A/">交流会<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>東京にある工業大学に通う学生です.<br>ものつくりに興味があります.<br>ロボコンをやっていました.</p>
+    <footer>
+      <a href="/about" class="button">Learn More</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/MasayaMorinaga" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/Msymng" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2019
+      
+        Molina&#39;s Tech diary
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.57.2' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#252e39"
+      },
+      "button": {
+        "background": "#14a7d0"
+      }
+    },
+    "content": {
+      "message": "このサイトではcookieを使用しています. cookieの収集を拒否する場合はご自身での設定変更が必要となります. 詳しくはこちらをご覧ください.",
+      "dismiss": "閉じる",
+      "allow": "同意",
+      "href": "/privacypolicy/"
+    }
+  });
+  </script>   
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/html.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/css.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/js.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/toml.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src=/js/util.js></script>
+  <script src=/js/main.js></script>
+  <script src=/js/add-on.js></script>
+  
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-148827082-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    </div>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 +++
-title = "Molina's tech diary"
+title = "Molina's Tech Diary"
 description = "Molinaの技術ブログ"
 date = "2019-08-20"
 
@@ -30,7 +30,7 @@ Molinaの技術ブログです.
 
 <br/>
 
-# [privacypolicy](/privacypolicy)
+# [PrivacyPolicy](/privacypolicy)
 プライバシーポリシーってやつです.
 
 2019年9月27日更新. 

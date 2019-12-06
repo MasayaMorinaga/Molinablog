@@ -6,10 +6,31 @@
     <description>Recent content in Raspberry Pi on Molina&#39;s Tech diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>js-JP</language>
-    <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.molina.jp/categories/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RaspberryPiでDockerを使ってみた話</title>
+      <link>http://blog.molina.jp/blog/raspberrypi%E3%81%A7docker%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.molina.jp/blog/raspberrypi%E3%81%A7docker%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1/</guid>
+      <description>以前の記事でRaspberry Piでブログを作ろうとしてやめたみたいな話をちらっとしたんですが, それについて具体的に書きたいと思います.
+Raspberry Piとは Raspberry Piは英国のRaspberry Pi財団によって設計された, ARMプロセッサのシングルボードコンピュータです. 「コンピューターと電子工作を世界中の人の手に」という理念の元に開発されているため, 価格が安く, インターフェイスが充実していることが特徴です. ストレージはMicroSDカード, 映像出力はHDMI(テレビにつなぐことが前提らしい), 電源供給はUSB端子, 入力インターフェイスはUSBポートからと, 一般家庭にあるもので済ますことができるので, 本体を買えばすぐに使い始めることができるというのが売りのようです (個人的にはテレビや外付けキーボード, マウスがない家も普通にあるのではと思ってしまいますが).
+そのため, 比較的初心者でも手が出しやすく, 色々遊べるので人気のようです. インターネットを漁れば, 「Raspberry Piで〇〇やってみた！」といった記事はたくさん見つかりますし, 入門書もたくさん売られているようなので, ちょっとものつくりやってみようという人には丁度いいんじゃないでしょうか.
+僕も価格の安さと使っている人の多さに惹かれ, とりあえずサーバー立てようかなくらいの気持ちでRaspberry Piを購入しました.
+サーバー入門 とりあえずRaspberry Pi上で何かサービスを動かして, それを外部からアクセスできるようにすればサーバー完成です.(雑)
+例えば, Webサーバーなら, クライアントからのリクエストに応じてWebページを配信するわけですし, メールサーバーならメールを送信したり受信したりする機能を提供します.
+これらの機能を提供するために, サーバーとなるコンピュータに様々な設定をしたり, サーバーアプリを導入したりします.
+なので, やりたいサービスに応じてサーバーアプリをインストールしていけばいいのですが, 複数のアプリを立ち上げると重くなったり, アプリ同士が干渉してしまう可能性があります. そのため, 最近はDockrという仮想環境にサーバーを構築するのが流行っている？ようです.
+Dockerとは DockerはDocker社が開発しているコンテナ型の仮想環境を構築するためのプラットフォームです.
+仮想環境というと, よくVirtualBoxなどの仮想マシンが挙げられますが, 仮想マシンはホストマイン上でゲストOSを起動してその上でミドルウェアを動かしているのに対して, DockerはカーネルはホストOSを利用し, プロセスやユーザーなどを隔離することで, 軽量で高速であるという特徴があります.
+また, Dockerはミドルウェアのインストールや環境設定をコード化して管理しているため, スクラップ&amp;amp;ビルドが容易で, 作成した環境の移行など簡単にできるという利点があります.
+今回自分は, 将来的にサーバーを移行することも考えて, Raspberry Pi上にDockerをインストールし, そこにサーバアプリをインストールすることにしました.
+Raspberry Piのアーキテクチャ 突然ですが, コンピュータには命令セットアーキテクチャというものがあります. これはソフトウェアとハードウェア間のインターフェイスの定義です.</description>
+    </item>
     
     <item>
       <title>ブログを始めてみました</title>

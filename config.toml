@@ -57,7 +57,7 @@ disableLanguages        = [""]
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
-    header                = "Molina's<br>Tech diary"
+    header                = "Molina's<br>Tech Diary"
     paragraph             = "Molinaの技術ブログ<br>技術関係ないことも書くかもしれない"
     rssIntro              = true
     socialIntro           = true

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netlify on Molina&#39;s Tech diary</title>
+    <link>http://blog.molina.jp/categories/netlify/</link>
+    <description>Recent content in Netlify on Molina&#39;s Tech diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>js-JP</language>
+    <lastBuildDate>Thu, 05 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.molina.jp/categories/netlify/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Netlifyで記事の公開</title>
+      <link>http://blog.molina.jp/blog/netlify%E3%81%A7%E8%A8%98%E4%BA%8B%E3%81%AE%E5%85%AC%E9%96%8B/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.molina.jp/blog/netlify%E3%81%A7%E8%A8%98%E4%BA%8B%E3%81%AE%E5%85%AC%E9%96%8B/</guid>
+      <description>前回の記事でHugoでサイトを作るところまで書きましたが, 今回は実際に公開するところまでを書こうと思います.
+ブログを公開する方法 Hugoなどの静的サイトジェネレーターで生成したブログを公開するには, いくつか方法があります.
+自分のサーバーに置く 自分のサーバーを持っているのならば, ビルドしたファイル群をそこにおいてやって外部からアクセスできるようにすれば良いです. ApacheとかNginxとかで簡単に設定できます. まぁ, 自分のサーバー持ってる人なら説明するまでもない気がしますが……
+ホスティングサービスを利用する とりあえずページを公開したいけどわざわざサーバーを借りるほどでもないかなぁという時には外部のホスティングサービスを使うという方法があります. 個人で使用する程度であれば, 無料で使えるホスティングサービスがいくつかあるので, それらを使えば手軽にブログを公開できます.
+例えば, GitHub PagesとかGitLab Pagesを使えば, 簡単にサイトを公開できますし. やっている人もたくさんいるので調べれば情報が出てきます.
+今回はその中で, Netlifyというホスティングサービスを利用しました.
+Netlifyの特徴 公式サイトの説明から適当に引用してくると
+ GitHub/GitLab/Bitbucketと連携して指定したブランチが更新されれば自動でbuild, deployまでしてくれる 無料プランでも独自ドメインを使用可能 難しい設定なしで自動でLet&amp;rsquo;s Encryptによるhttps証明書発行が可能 フォームなども設置可能  あたりが挙げられます. 無料プランでも一ヶ月あたりの転送量は100Gまで利用可能で, 個人で使用するぶんには十分でしょう(たぶん).
+方法 前準備 公開したいサイトのプロジェクトフォルダをGitHub/GitLab/Bitbucketにpushします.
+Netlifyにログイン 登録がまだの場合は登録して, ログインします. GitHub/GitLab/Bitbucketのアカウントで登録できます.
+Gitリポジトリと連携 ログインすると, 右の方に「New site from Git」ボタンがあるのでクリックします.  すると連携可能なサービスが出てくるので, 自分の使うサービスをクリックします. Gitログインすると, どのリポジトリと連携するか聞かれるので, 自分のサイトのリポジトリを選択します.
+Webサイトを設定 サイトの設定をします. もうすでにビルドが終わってソースコードがある場合は, そのフォルダを設定します. (例:publicなど)
+HugoやGarsbyなどを使っている場合は, Netlify側でビルドすることもできます. ビルドコマンドはHugoの場合はhugoでいけました.
+公開内容を確認 以上でサイトの公開は終了です. 初期のままだと初期ドメインが変なので, Site settingsからSite nameを変更すれば好きなドメインにすることができます.</description>
+    </item>
+    
+  </channel>
+</rss>
