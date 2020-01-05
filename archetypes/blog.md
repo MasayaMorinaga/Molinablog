@@ -1,11 +1,11 @@
 +++
-author = ""
+author = "Molina"
 categories = [""]
-date = ""
+date = "{{ .Date }}"
 description = ""
 images = [""]
 linktitle = ""
-title = ""
+title = "{{ replace .Name "-" " " | title }}"
 type = "post"
 
 +++
