@@ -7,5 +7,6 @@ images = [""]
 linktitle = ""
 title = "{{ replace .Name "-" " " | title }}"
 type = "post"
+math = "false"
 
 +++
