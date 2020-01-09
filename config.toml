@@ -4,7 +4,7 @@ title = "Molina's Tech diary"
 theme = "future-imperfect-slim"
 preserveTaxonomyNames   = true
 paginate                = 5
-disqusShortname         = ""
+disqusShortname         = "molinatechblog"
 googleAnalytics         = "UA-148827082-1"
 pluralizeListTitles     = false
 disableLanguages        = [""]
@@ -99,10 +99,10 @@ disableLanguages        = [""]
     repo                = ""
     branch              = ""
 
-    [params.staticman.recaptcha]
-      # Both keys must be present to enable recaptcha
-      siteKey           = "" # Site Key
-      encryptedKey      = ""
+  [params.staticman.recaptcha]
+    # Both keys must be present to enable recaptcha
+    siteKey           = "" # Site Key
+    encryptedKey      = ""
 
 [menu]
   # Sets the menu items in the navigation bar
@@ -136,6 +136,12 @@ disableLanguages        = [""]
     url               = "/privacypolicy/"
     identifier        = "fas fa-user-lock"
     weight            = 5
+
+  [[menu.main]]
+    name              = "Contact"
+    url               = "/contact/"
+    identifier        = "fas fa-envelope"
+    weight            = 6
 
 # Sets Social Media icons to appear and link to your account. Value should be your
 # username unless otherwise noted. These are the icons affected by socialAppearAtTop
