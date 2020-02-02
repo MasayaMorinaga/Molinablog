@@ -207,7 +207,7 @@ https://en.wikipedia.org/wiki/PGF/TikZ
 
 https://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/tikz.html
 
-http://kawa0616.hatenablog.com/entry/2018/03/26/Tex_%28TikZ%29_%E3%81%A7%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E7%B7%9A%E5%9B%B3%E3%82%92%E6%9B%B8%E3%81%8F
+[http://kawa0616.hatenablog.com/entry/2018/03/26/Tex_%28TikZ%29_でブロック線図を書く](http://kawa0616.hatenablog.com/entry/2018/03/26/Tex_%28TikZ%29_%E3%81%A7%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E7%B7%9A%E5%9B%B3%E3%82%92%E6%9B%B8%E3%81%8F)
 
 [^1]:実は最近はだいぶ改善されているので騒ぎ散らすほど大変ではない
 [^2]:メモリの暴力(32G超)で殴ればある程度解決できることが知られている
