@@ -9,6 +9,7 @@ googleAnalytics         = "UA-148827082-1"
 pluralizeListTitles     = false
 disableLanguages        = [""]
 
+hasCJKLanguage = true
 [params]
   mainSections = ["blog", "post"]
   # Loads CSS and JavaScript files. The variable is an array so that you can load
