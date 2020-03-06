@@ -1,5 +1,5 @@
 baseURL = "http://blog.molina.jp/"
-languageCode = "js-JP"
+languageCode = "ja-JP"
 title = "Molina's Tech diary"
 theme = "future-imperfect-slim"
 preserveTaxonomyNames   = true
@@ -9,7 +9,9 @@ googleAnalytics         = "UA-148827082-1"
 pluralizeListTitles     = false
 disableLanguages        = [""]
 
+defaultContentLanguage = "ja"
 hasCJKLanguage = true
+
 [params]
   mainSections = ["blog", "post"]
   # Loads CSS and JavaScript files. The variable is an array so that you can load
