@@ -3,8 +3,10 @@ author = "Molina"
 categories = ["Windows","Tips"]
 date = "2019-12-02"
 description = "Windowsの便利な機能をまとめてみた"
+subtitle = "Windowsの便利な機能をまとめてみた"
 linktitle = ""
 title = "Windowsの便利機能"
+summary = "Windowsの知っておくと便利な機能いろいろ"
 type = "post"
 
 +++

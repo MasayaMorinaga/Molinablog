@@ -2,10 +2,11 @@
 author = "Molina"
 categories = ["Hugo"]
 date = "2019-09-03"
-description = "WindowsでHugoの環境構築"
+subtitle = "WindowsでHugoの環境構築"
 
 linktitle = ""
 title = "Hugoでブログ的なものを作る"
+summary = "Hugoでブログを作ったのでその記録"
 type = "post"
 
 +++
@@ -56,7 +57,7 @@ https://proengineer.internous.co.jp/content/columnfeature/5205
 
 コマンドプロンプトを開きたい場合は, スタートメニューの検索窓で「コマンドプロンプト」と入力するとコマンドプロンプトが開きます. コマンドプロンプトに
 
-```
+```bash
 hugo version
 ```
 
@@ -69,14 +70,14 @@ hugoとgitが入っていれば基本公式ページの[Quick-Start](https://goh
 
 まず, ブログを生成したいディレクトリ(フォルダ)までコマンドプロンプトで移動します. 
 
-```
+```bash
 cd ディレクトリのパス
 ```
 で移動できます.
 
 移動できたら, 
 
-```
+```bash
 hugo new site quickstart
 ```
 
@@ -86,20 +87,20 @@ hugo new site quickstart
 
 次に, 
 
-```
+```bash
 cd quickstart
 ```
 
 で作ったディレクトリに移動し, 
 
-```
+```bash
 git init
 ```
 
 で新たにGitのリポジトリを作ります.
 その後, サブモジュールでテーマを追加します. 
 
-```
+```bash
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
 ```
 
@@ -110,7 +111,7 @@ git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anan
 テーマを適用するにはconfig.tomlでテーマを設定してやる必要があります. 
 コマンドプロンプトを使う場合は
 
-```
+```bash
 echo theme = "ananke" >> config.toml
 ```
 
@@ -118,7 +119,7 @@ echo theme = "ananke" >> config.toml
 
 とりあえず適当に記事を生成してみます. 
 
-```
+```bash
 hugo new posts/my-first-post.md
 ```
 
@@ -127,7 +128,7 @@ hugo new posts/my-first-post.md
 
 実際の出来栄えは, 
 
-```
+```bash
 hugo server -D
 ```
 

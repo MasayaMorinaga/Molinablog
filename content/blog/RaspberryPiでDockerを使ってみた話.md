@@ -2,9 +2,10 @@
 author = "Molina"
 categories = ["Raspberry Pi","Docker"]
 date = "2019-09-25"
-description = "Raspberry PiにDockerを入れて遊んでみたのでその感想"
+subtitle = "Raspberry PiにDockerを入れて遊んでみたのでその感想"
 linktitle = ""
 title = "RaspberryPiでDockerを使ってみた話"
+summary = "Raspberry PiでDockerを使おうとしたがあまり思ったとおりにならなかったのでその記録"
 type = "post"
 
 +++
@@ -56,11 +57,11 @@ x86とARMは処理方法が異なるので一般に互換性はありません.
 https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/
 
 要するに
-```
+```bash
 curl -sSL https://get.docker.com | sh
 ```
 でおしまいです. 
-```
+```bash
 docker -v
 ```
 でバージョンが表示されたら入っています.

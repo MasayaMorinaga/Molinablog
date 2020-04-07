@@ -8,6 +8,7 @@ featuredalt = ""
 featuredpath = ""
 linktitle = ""
 title = "ブログを始めてみました"
+summary = "ブログを作ってこうなるまでの経緯"
 type = "post"
 
 +++

@@ -2,9 +2,10 @@
 author = "Molina"
 categories = ["Hugo","Netlify"]
 date = "2019-09-05"
-description = "作ったブログを公開する"
+subtitle = "作ったブログを公開する"
 linktitle = ""
 title = "Netlifyで記事の公開"
+summary = "ブログとかホームページをNetlifyで公開するときの手順"
 type = "post"
 
 +++

@@ -2,16 +2,17 @@
 author = "Molina"
 categories = ["TeX","TikZ"]
 date = "2020-01-26T17:56:05+09:00"
-description = "TikZを使ってｽｯとフローチャートを書く"
-images = ["/img/2020/01/TikZ_flow_1.png"]
+subtitle = "TikZを使ってｽｯとフローチャートを書く"
 linktitle = "TikZでフローチャートを書く"
 title = "TikZでフローチャートを書く"
+summary = "TikZを使ってフローチャートを書く手順"
 type = "post"
 math = "false"
-
+[header]
+image = "2020/01/TikZ_flow_1.png"
 +++
-# フローチャート書きたい
 
+# フローチャート書きたい
 まれに, フローチャート書きたいなと思うことがあります. 
 ﾏｯｸﾛｿﾌﾄのﾎﾟﾜｰﾎﾟｲﾝﾄで書けみたいなことを言われますが, ﾎﾟﾜｰﾎﾟｲﾝﾄはテキストの大きさが自動で変わったり, 枠の大きさや位置を揃えたりするのが面倒だったり[^1]オブジェクトを増やすと動作が緩慢になったり[^2]するのが好みに合いません.  というかそもそもﾎﾟﾜｰﾎﾟｲﾝﾄは有料ですから, 複数台PCを持っていてどの端末でも編集したい自分にとっては予算面であまり好ましくない[^3]という問題もあります. 
 
@@ -36,7 +37,7 @@ JISの規格書を読んでも良いですが, 個人的にはわかりにくか
 
 # TikZでフローチャートを書く
 それでは本題のフローチャートを書く話です. フローチャートを書くのには, TikZのNodeコマンドを使用します. まぁﾎﾟﾜｰﾎﾟｲﾝﾄで言うところのテキストボックスってやつですね. 
-```
+```tex
 \documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
 \usepackage{tikz}
 
@@ -52,7 +53,7 @@ JISの規格書を読んでも良いですが, 個人的にはわかりにくか
 |:-:|
 
 これだけではアレなので, 囲ったりしてみます. 
-```
+```tex
 \documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
 \usepackage{tikz}
 
@@ -70,7 +71,7 @@ JISの規格書を読んでも良いですが, 個人的にはわかりにくか
 `\node`の後ろの`[]`の中にオプションを与えることでスタイルを指定できます. 
 `rectangle`はテキストを四角で囲う, `draw`は枠線表示, `text centered`はテキスト中央揃えです. 
 
-```
+```tex
 \documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
 \usepackage{tikz}
 
@@ -86,7 +87,7 @@ JISの規格書を読んでも良いですが, 個人的にはわかりにくか
 |:-:|
 
 `text width`で幅,  `minimum height`で最小高さ(必要に応じて自動的に広がる)を指定しました. ところで, これらをいちいち書いていくのは面倒なので, `\tikzset`コマンドを使ってまとめます. するとこのように書き換えることが出来ます. 
-```
+```tex
 \documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
 \usepackage{tikz}
 
@@ -98,7 +99,7 @@ JISの規格書を読んでも良いですが, 個人的にはわかりにくか
 \end{document}
 ```
 さて, ここまでわかれば, フローチャートに必要なNodeのオプションを定義します. 
-```
+```tex
 \documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric}
@@ -125,7 +126,7 @@ JISの規格書を読んでも良いですが, 個人的にはわかりにくか
 
 次にNode間を矢印でつなぎます. 
 `\draw[->]  (a) --(b);`とか書けばいい感じにつながってくれます. 
-```
+```tex
 \documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric}
@@ -152,7 +153,7 @@ JISの規格書を読んでも良いですが, 個人的にはわかりにくか
 
 まぁここまで来たら実質フローチャート書けたようなものですね. 矢印も`(a)`の代わりに座標を指定してやれば任意の場所から任意の場所まで引けます. Nodeも任意の場所におけるし矢印も任意の場所に引けるようになったと思います. ただ場合によってはNodeを相対位置で指定出来たほうが嬉しいかもしれません. `\usetikzlibrary{positioning}`することで相対位置でも場所を指定できるようになります. これを用いるとこのようなフローチャートが書けます. 
 
-```
+```tex
 \documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric}

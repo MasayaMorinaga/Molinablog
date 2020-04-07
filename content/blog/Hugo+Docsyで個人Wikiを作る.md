@@ -2,7 +2,8 @@
 author = "Molina"
 categories = ["Hugo","GitLab CI","Netlify"]
 date = "2020-02-03T03:09:39+09:00"
-description = "Hugoを使って個人wikiを作った話"
+subtitle = "Hugoを使って個人wikiを作った話"
+summary = "HugoとDocsyを使って個人wikiを作ってみたのでその記録"
 linktitle = ""
 title = "Hugo+Docsyで個人Wikiを作る"
 type = "post"
@@ -12,7 +13,8 @@ math = "false"
 HugoとDocsyを使って個人wikiを作ってみました. 
 # 概要
 ## そもそも個人wikiとは
-Wikiといえば[Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)を思い浮かべる人が多いと思います. Wikipediaは不特定多数の人が編集でき, 公開されていますが, あんな感じのサイトを自分専用に作りたいなぁということです. そんなんいるか？みたいな人のためにどういう内容が欲しいか上げると
+Wikiといえば[Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)を思い浮かべる人が多いと思います. Wikipediaは不特定多数の人が編集でき, 公開されていますが, あんな感じのサイトを自分専用に作りたいなぁということです. 
+そんなんいるか？みたいな人のためにどういう内容が欲しいか上げると
 
 - よく使うコマンドのメモ
 - 参考になるサイトの整理
@@ -51,30 +53,30 @@ Node.jsとnpmはWindowsなら[公式サイト](https://nodejs.org/ja/)からLTS�
 ## wiki本体の作成
 ではHugoでwikiを作っていきたいと思います. 
 wikiを作りたいディレクトリに移動し, 
-```cmd
+```bash
 hugo new site wiki
 ```
 で最低限のディレクトリが揃います. 
-```cmd
+```bash
 cd wiki
 ```
 でwikiのディレクトリに移動し, 
-```cmd
+```bash
 git init
 ```
 でGitのリポジトリを作ります.
 
 その後サブモジュールでテーマを加えます. 
-```cmd
+```bash
 git submodule add https://github.com/google/docsy.git themes/docsy
 ```
 とし, 
-```cmd
+```bash
 git submodule update --init --recursive
 ```
 でサブモジュールをアップデートします. 結構時間がかかります. 
 サブモジュールのアップデートが終わったらPostCSSを導入します. 
-```cmd
+```bash
 npm install autoprefixer
 npm install postcss-cli
 ```
@@ -85,7 +87,7 @@ Docsyが導入できたら設定をしていきます.
 [サンプルサイト](https://example.docsy.dev/)を真似していけば楽にできると思います. 
 ソースは[GitHub](https://github.com/google/docsy-example)にあるので, `config.toml`など, 必要なものだけコピーそてくれば良いと思います. 
 とりあえず言語設定のところを
-```yaml
+```toml
 [languages]
   [languages.ja]
     languageName = "日本語"
@@ -95,7 +97,7 @@ Docsyが導入できたら設定をしていきます.
 とすればサイトが日本語になります. あとは`github_repo`のところに自分がPushする予定のGitHubなりGitLabなりのレポジトリのURLを書いとくと良さそう. 検索機能はGoogle Custom SearchとAlgolia DocSearchとLunr.jsを用いたものから選べますが, オフラインで使えるのはLunr.jsを用いたもののみのはずです. 
 
 その他の細かい設定は[公式ドキュメント](https://www.docsy.dev/docs/)に書いてあるのでそちらを読みつつカスタマイズしていくと良いと思います. 
-```cmd
+```bash
 hugo server
 ```
 でweb サーバーをローカルに起動できるので, [http://localhost:1313/](http://localhost:1313/)にアクセスすれば実際に出来栄えを確認しながらカスタマイズできます. 
@@ -163,7 +165,7 @@ URLは、Settings > Pages から確認, 変更できます.
 
 # その他Tips
 Netlifyでビルド&公開する場合は, Netlifyのビルドコマンドの設定を
-```cmd
+```bash
 cd themes/docsy && git submodule update -f --init && cd ../.. && npm install autoprefixer && npm install postcss-cli && hugo
 ```
 とすれば良い. その際,「archetypes」「assets」「data」「layouts」「satatic」フォルダが直下のディレクトリに存在しないとエラーになる. gitでは空フォルダは同期されないので, 空フォルダには「.gitkeep」ファイルを追加するなどして空フォルダ出ない状態にして置く必要がある. 

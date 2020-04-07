@@ -1,4 +1,4 @@
 # ReadMe
 Molinaのブログのソースです. 
 
-テーマは[Hugo Future Imperfect Slim](https://github.com/pacollins/hugo-future-imperfect-slim)を改良して使っています.
+テーマは[Academic](https://sourcethemes.com/academic/)を改良して使っています.

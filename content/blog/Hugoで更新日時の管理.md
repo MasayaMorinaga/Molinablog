@@ -3,9 +3,11 @@ author = "Molina"
 categories = ["Hugo","GitLab CI","Netlify"]
 date = "2020-02-15T21:33:25+09:00"
 description = "Hugoで日時管理しようとしたときに詰まったメモ"
+subtitle = "Hugoで日時管理しようとしたときに詰まったメモ"
 images = [""]
 linktitle = ""
 title = "Hugoで更新日時の管理"
+summary = "Hugoの日付管理機能の使い方とその注意"
 type = "post"
 math = "false"
 
@@ -16,6 +18,7 @@ math = "false"
 Hugoでブログやドキュメントを作るにあたって, 日付管理が必要な場合があります. 
 HugoはFront Matterで日付を管理することができ, 以下の項目の設定が可能です. 
 
+
 - `date`: 記事の作成日
 - `lastmod`: 更新日
 - `publishDate`: 公開日
@@ -25,7 +28,7 @@ HugoはFront Matterで日付を管理することができ, 以下の項目の�
 
 これらのパラメータですが, 各記事に記述されているFront Matterの中の`date`や`lastmod`などの値が呼び出される様になっていて, その値が存在しない場合は他の値が呼び出されます. どの値が呼び出されるかはデフォルトでは以下のようになっています. 
 
-```yaml
+```toml
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
 lastmod = [":git", "lastmod", "date", "publishDate"]
@@ -61,7 +64,7 @@ https://gitlab.com/gitlab-com/support-forum/issues/4051
 しかし, 自分が使っているHugoのイメージは`/usr/share/zoneinfo`が消されているようで, この方法ではうまくいきませんでした. 
 
 そこで, ビルドコマンドの前に
-```cmd
+```bash
 - apk --no-cache add tzdata && \
 - cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 ```
@@ -71,7 +74,7 @@ https://gitlab.com/gitlab-com/support-forum/issues/4051
 Netlifyの場合は環境変数を設定してやればうまくいくようです. 環境変数の指定方法は2つあります. 
 ### netlify.tomlを作成しそこに書く
 netlify.tomlを作成し,
-```yaml
+```toml
 [build.environment]
   TZ="Asia/Tokyo"
 ```
@@ -86,5 +89,7 @@ netlify.tomlを作成し,
 
 # 参考
 https://gohugo.io/getting-started/configuration/#configure-front-matter
+
 http://kawaken.hateblo.jp/entry/2018/08/30/190954
+
 https://qiita.com/tommy_aka_jps/items/3cf937942e5a060e5d72
