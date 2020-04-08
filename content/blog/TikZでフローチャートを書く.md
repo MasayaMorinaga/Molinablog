@@ -4,6 +4,7 @@ categories = ["TeX","TikZ"]
 date = "2020-01-26T17:56:05+09:00"
 subtitle = "TikZを使ってｽｯとフローチャートを書く"
 linktitle = "TikZでフローチャートを書く"
+aliases = ["/blog/tikzでフローチャートを書く/"]
 title = "TikZでフローチャートを書く"
 summary = "TikZを使ってフローチャートを書く手順"
 type = "post"

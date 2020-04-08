@@ -5,6 +5,7 @@ date = "2020-02-03T03:09:39+09:00"
 subtitle = "Hugoを使って個人wikiを作った話"
 summary = "HugoとDocsyを使って個人wikiを作ってみたのでその記録"
 linktitle = ""
+aliases = ["/blog/hugo+docsyで個人wikiを作る/"]
 title = "Hugo+Docsyで個人Wikiを作る"
 type = "post"
 math = "false"

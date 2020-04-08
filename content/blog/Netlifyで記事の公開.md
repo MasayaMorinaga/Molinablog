@@ -4,6 +4,7 @@ categories = ["Hugo","Netlify"]
 date = "2019-09-05"
 subtitle = "作ったブログを公開する"
 linktitle = ""
+aliases = ["/blog/netlifyで記事の公開/"]
 title = "Netlifyで記事の公開"
 summary = "ブログとかホームページをNetlifyで公開するときの手順"
 type = "post"

@@ -6,6 +6,7 @@ description = "Hugoで日時管理しようとしたときに詰まったメモ"
 subtitle = "Hugoで日時管理しようとしたときに詰まったメモ"
 images = [""]
 linktitle = ""
+aliases = ["/blog/hugoで更新日時の管理/"]
 title = "Hugoで更新日時の管理"
 summary = "Hugoの日付管理機能の使い方とその注意"
 type = "post"

@@ -4,6 +4,7 @@ categories = ["Raspberry Pi","Docker"]
 date = "2019-09-25"
 subtitle = "Raspberry PiにDockerを入れて遊んでみたのでその感想"
 linktitle = ""
+aliases = ["/blog/raspberrypiでdockerを使ってみた話/"]
 title = "RaspberryPiでDockerを使ってみた話"
 summary = "Raspberry PiでDockerを使おうとしたがあまり思ったとおりにならなかったのでその記録"
 type = "post"
