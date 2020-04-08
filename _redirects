@@ -1,0 +1,5 @@
+# These rules will change if you change your siteâ€™s custom domains or HTTPS settings
+
+# Redirect default Netlify subdomain to primary domain
+https://molina.netlify.com/* https://molina.jp/:splat 301!
+https://blog.molina.jp/* https://molina.jp/:splat 301!
