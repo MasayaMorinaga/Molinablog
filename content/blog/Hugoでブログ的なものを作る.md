@@ -3,7 +3,7 @@ author = "Molina"
 categories = ["Hugo"]
 date = "2019-09-03"
 subtitle = "WindowsでHugoの環境構築"
-
+aliases = ["/blog/Hugoでブログ的なものを作る/"]
 linktitle = ""
 title = "Hugoでブログ的なものを作る"
 summary = "Hugoでブログを作ったのでその記録"
