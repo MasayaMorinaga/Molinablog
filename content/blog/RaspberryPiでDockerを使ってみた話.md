@@ -113,3 +113,5 @@ https://www.raspberrypi.org/about/
 [https://blog.rogiken.org/blog/2018/12/16/猫でもできるsomething/](https://blog.rogiken.org/blog/2018/12/16/%e7%8c%ab%e3%81%a7%e3%82%82%e3%81%a7%e3%81%8d%e3%82%8bsomething/)
 
 https://knowledge.sakura.ad.jp/13265/
+
+{{% ad %}}

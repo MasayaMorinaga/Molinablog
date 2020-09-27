@@ -9,7 +9,6 @@ aliases = ["/blog/hugo+docsyで個人wikiを作る/"]
 title = "Hugo+Docsyで個人Wikiを作る"
 type = "post"
 math = "false"
-
 +++
 HugoとDocsyを使って個人wikiを作ってみました. 
 # 概要
@@ -183,3 +182,5 @@ https://qiita.com/otuhs_d/items/217d58bc3171f6a38016
 https://www.serversus.work/topics/iir5lhcfgivsdxpxgdfb/
 
 https://www.gwtcenter.com/gitlab-pages-static-content
+
+{{% ad %}}

@@ -87,3 +87,5 @@ Microsoftヒント https://www.microsoft.com/ja-jp/tips/home
 
 
 [^1]:ロ技研ではログインしたPCをロックせずに離席してしまうと, twitter等に「C++完全に理解した」と投稿されてしまう. [例](https://twitter.com/i/moments/837633572315914242)を参照のこと. 
+
+{{% ad %}}

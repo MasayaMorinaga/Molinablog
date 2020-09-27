@@ -215,3 +215,5 @@ https://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/tikz.html
 [^2]:メモリの暴力(32G超)で殴ればある程度解決できることが知られている
 [^3]:Office 365 Soloを契約すると2020年1月現在, 年間12984円で最大5端末使えるらしいので思ったよりは安かった(が, フローチャートを書くために契約する価値があるかは微妙である). 
 [^4]:フリーの「組版システム」. 詳しくは[https://texwiki.texjp.org/](https://texwiki.texjp.org/)
+
+{{% ad %}}

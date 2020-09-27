@@ -145,3 +145,5 @@ hugo server -D
 https://gohugo.io/getting-started/installing/
 
 https://gohugo.io/getting-started/quick-start/
+
+{{% ad %}}
